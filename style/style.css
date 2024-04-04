@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('../images/ashwin-header-new.jpg'); /* Replace with your header background image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 150px;
+}
+
+#videoContainer {
+    width: 100%;
+    max-width: 700px;
+    min-height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#detailsContainer {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#descriptionContainer {
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#searchContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchContainer input, #searchContainer select {
+    margin: 10px;
+    padding: 5px;
+}
+
+#resultsContainer {
+    width: 100%;
+    height: 750px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #2644a5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  .large-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .styled-button {
+    background-color: #3a8ec2; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-button:hover {
+    background-color: hsl(0, 17%, 95%);
+    color: #2644a5;
+  }
+  
+
+
+ /* SECTION BELOW CONTAINS THE STYLES FOR THE IMAGE SLIDE SHOWS */
+
+   /* CSS for slideshow container */
+   .slideshow-container {
+    max-width: 1000px;
+    max-height: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+/* CSS for images */
+.mySlides {
+    display: none;
+}
+
+/* CSS for caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* CSS for navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "prev" button */
+.prev {
+    left: 0;
+}
+
+/* Position the "next" button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Javascript for slideshow functionality */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
